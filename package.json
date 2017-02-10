@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "global": "^4.3.1",
+    "vue-cli": "^2.8.1"
+  },
+  "name": "thegrizzled",
+  "version": "1.0.0",
+  "description": "an online version of The Grizzled.",
+  "main": "main.js",
+  "repository": "git@github.com:thinkaxelthink/thegrizzled.git",
+  "author": "thinkaxelthink",
+  "license": "MIT"
+}
