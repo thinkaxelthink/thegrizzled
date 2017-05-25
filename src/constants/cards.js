@@ -1,40 +1,40 @@
-import { ATTACKS, WEATHER } = './threats'
+import { ATTACKS, WEATHER } from './threats'
 
 export const PILES = {
-  peace: { image: "peace.svg" },
-  monument: { image: "monument.svg" }
+  peace: { image: 'peace.svg' },
+  monument: { image: 'monument.svg' }
 }
 
 export const CHARACTERS = [
   {
-    name: "Félix Moreau",
+    name: 'Félix Moreau',
     charm: WEATHER.NIGHT,
-    image: "felix.svg"
+    image: 'felix.svg'
   },
   {
-    name: "Gustave Bidau",
+    name: 'Gustave Bidau',
     charm: WEATHER.SNOW,
-    image: "gustave.svg"
+    image: 'gustave.svg'
   },
   {
-    name: "Charles Sauliére",
+    name: 'Charles Sauliére',
     charm: WEATHER.RAIN,
-    image: "charles.svg"
+    image: 'charles.svg'
   },
   {
-    name: "Gaston Fayard",
+    name: 'Gaston Fayard',
     charm: ATTACKS.SHELL,
-    image: "gaston.svg"
+    image: 'gaston.svg'
   },
   {
-    name: "Lazare Bonticelli",
+    name: 'Lazare Bonticelli',
     charm: ATTACKS.WHISTLE,
-    image: "lazare.svg"
+    image: 'lazare.svg'
   },
   {
-    name: "Anselme Perrin",
+    name: 'Anselme Perrin',
     charm: ATTACKS.GAS,
-    image: "anselme.svg"
+    image: 'anselme.svg'
   },
 ]
 

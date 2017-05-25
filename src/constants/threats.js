@@ -13,7 +13,6 @@ export const ATTACKS = {
   },
 }
 
-
 export const WEATHER = {
   SNOW: {
     label: 'snow',

@@ -2,6 +2,7 @@ var path = require('path')
 var utils = require('./utils')
 var config = require('../config')
 var vueLoaderConfig = require('./vue-loader.conf')
+// var projectRoot = path.resolve(__dirname, '../')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -19,7 +20,7 @@ module.exports = {
       : config.dev.assetsPublicPath
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: ['.js', '.jsx', '.vue', '.json'],
     modules: [
       resolve('src'),
       resolve('node_modules')
@@ -28,7 +29,8 @@ module.exports = {
       'vue$': 'vue/dist/vue.common.js',
       'src': resolve('src'),
       'assets': resolve('src/assets'),
-      'components': resolve('src/components')
+      'components': resolve('src/components'),
+      'containers': resolve('src/containers')
     }
   },
   module: {
@@ -46,6 +48,11 @@ module.exports = {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: vueLoaderConfig
+      },
+      {
+        test: /\.jsx$/,
+        loader: 'babel-loader',
+        include: resolve('src')
       },
       {
         test: /\.js$/,
